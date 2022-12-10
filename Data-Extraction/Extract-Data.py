@@ -11,10 +11,10 @@ After downloading, provide the path in line 11
 path = os.path.join("D:\Santosh\stackoverflow.com-Posts", "Posts.xml")
 # this line will create a file DataChunk.xml in the root folder of this file.
 try:
-    f = open('DataChunk.xml', 'x')
+    f = open('../data/posts_10000000.xml', 'x')
 except:
-    os.remove('DataChunk.xml')
-    f = open('DataChunk.xml','w')
+    os.remove('../data/posts_10000000.xml')
+    f = open('../data/posts_10000000.xml', 'w')
 f.writelines('<?xml version="1.0" encoding="utf-8"?>')
 f.write('\n')
 f.writelines('<posts>')
@@ -34,9 +34,10 @@ for index, (event, elem) in enumerate(context):
         except:
             pass
         root.clear()
-    file_size = os.stat('DataChunk.xml')
+    file_size = os.stat('../data/posts_10000000.xml')
     print(file_size.st_size)
-    if file_size.st_size > 5368709120:
+    # change according to your size. represents your data size in the bytes format.
+    if file_size.st_size > 10000000:
         print(True)
         f.writelines("</posts>")
         sys.exit()
