@@ -1,5 +1,5 @@
 """
-  spark-submit --packages com.databricks:spark-xml_2.11:0.4.1 prepare_data_posts_all_csv.py
+  spark-submit --packages com.databricks:spark-xml_2.11:0.4.1 prepare_data.py
 
 """
 
@@ -91,6 +91,7 @@ def main():
     # creating data frame.
     postDF = spark.createDataFrame(post_fields, questionsSchema)
 
+    # saving the dataframe in PARQUET formate
     postDF.write.format('parquet').options(header='false').save(
         r"C:\Users\Santosh_Burada\PycharmProjects\hadoop\data\posts_10000000")
 
