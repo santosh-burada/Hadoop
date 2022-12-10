@@ -1,4 +1,4 @@
-# Hadoop
+# Hadoop Core Cluster Configuration
     0  sudo passwd
     1  cd /
     2  clear
