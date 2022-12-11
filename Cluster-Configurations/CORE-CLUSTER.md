@@ -197,6 +197,11 @@ At last run the below command to insyall the Cloudera-Manager
 ```bash
 sudo ./cloudera-manager-installer.bin
 ```
+After installing Cloudera Manager Successfully access the Cloudera Manager
+UI using below format
+copy external Ip address of master node (refer screenshot) and use the port
+7180 to access Cloudera Manager: <External Ip address>:7180.
+
 ## Note:
 
 **You can follow the screenshots in Screenshots folder to follow after above command**
