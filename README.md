@@ -28,7 +28,7 @@ One-click Cluster.
     - Distinct number of users
     - Questionswhich are answered
     - Most viewed questions
-    - Computing the response time to getthe answer for questions.
+    - Computing the response time to get the answer for questions.
     - Computing hourly data (per hour how many questions got answered)
     - Time evaluation of number of questions and answers.
     - Computing number oftags
